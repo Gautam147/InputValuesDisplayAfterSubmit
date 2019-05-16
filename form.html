@@ -1,4 +1,60 @@
 
+NEW WINDOW  (ISMEN ONCLICK USE KIYA HAI)
+
+<html>
+<head>
+<script language="JavaScript">
+function display() {
+dispwin = window.open('NewWin','toolbar=no,status=no,width=300,height=200')
+message = "<b>NAME: </b>" + document.form.yourname.value + "<br>";
+message += "<b>ADDRESS: </b>" + document.form.address.value +"<br>";
+message += "<b>PHONE: </b>" + document.form.age.value + "</ul>";
+dispwin.document.write(message);
+}
+</script>
+</head>
+<body>
+<form name="form">
+<p>Name: <input type="TEXT" name="yourname"/></p>
+<p>Address: <input type="TEXT" name="address"/></p>
+<p>Age: <input type="number" name="age"/></p>
+<p><input type="button" value="display" onClick="display();"></p>
+</form>
+</body>
+</html>
+
+
+
+
+BELOW YOUR FORM   (YE SIMPLE GET ELEMENT BY ID SE KIYA HAI)
+
+<!DOCTYPE html>
+<html>
+<head>
+    <script language="JavaScript">
+        function display() {
+            var strText = document.getElementById("yourname").value;          
+            var strText1 = document.getElementById("address").value;
+            var result = strText + '  ' + strText1;
+            document.getElementById('spanResult').textContent = result;       
+        }
+    </script>
+</head>
+<body> 
+    <p>Name: <input type="text" id="yourname"/></p>
+    <p>Address: <input type="text" id="address"/></p>
+    <button  onclick="display()">Submit</button> <br>
+    <span id="spanResult"></span>
+</body>
+</html>
+
+
+
+
+
+
+sabse easy way of displaying data
+
 <html>
       <head>
         <script language="JavaScript"> 

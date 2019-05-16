@@ -1,0 +1,26 @@
+
+<html>
+      <head>
+        <script language="JavaScript"> 
+        function display(){ 
+        var name=document.getElementById('yourname').value;
+        var address=document.getElementById('address').value;
+        var age=document.getElementById('age').value;
+        document.write(name + "<br>");
+        document.write(address + "<br>");
+        document.write(age);
+        } 
+        </script> 
+      </head>
+<body>  
+<form onsubmit="return display();" method="post">
+  Name: <input  type="text" id="yourname"><br>
+    Address: <input  type="text" id="address"><br>
+      Age: <input  type="number" id="age"><br>
+  <input type="submit" value="Submit" onClick="display()">
+</form>
+</body>
+</html>
+
+
+
